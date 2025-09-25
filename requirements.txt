@@ -1,0 +1,3 @@
+python-dotenv
+win32gui
+psutil~=7.1.0
