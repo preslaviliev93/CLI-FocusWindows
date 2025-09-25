@@ -1,15 +1,49 @@
-This application will track your application usage times and will display detailed statistics at the termination of the program (CTRL + C)
-run pip install requirements.txt
+# Windows Application Usage Tracker
 
-You can change the measure interval by editing:         self.measuring_interval = 5 # The default value now is every 5 seconds.
+This project tracks your active application usage times on Windows and displays detailed statistics when the program is terminated (`CTRL + C`).
 
-Sample output:
+It is useful for analyzing how much time you spend on each application and specific windows (e.g., browser tabs).
+
+---
+
+## Features
+
+- Tracks active window focus and records the time spent.
+- Groups statistics by application (process name).
+- Shows detailed breakdown per window title.
+- Simple console report on exit.
+- Lightweight and configurable.
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/preslaviliev93/CLI-FocusWindows
+   cd CLI-FocusWindows
+
+2. Install requirements:
+
+   ```bash
+   pip install requirements.txt
+
+
+3. Run the script:
+
+   ```bash
+   python main.py
+
+
+## Sample output:
+
+```text
 Tracking ... Press CTRL+C to exit ...
 
 Program exited by user
-========= brave.exe (Total time: 00:00:15) =========
-Python — Говнокод.ру - Brave -> 00:00:05
-(1) Messenger | Facebook - Brave -> 00:01:20
-(1) Facebook - Brave -> 00:00:05
+========= brave.exe (Total time: 00:10:05) =========
+Messenger | Facebook - Brave -> 00:01:20
+Facebook - Brave -> 00:08:45
 
-The statistics are not saved anywhere.
+
