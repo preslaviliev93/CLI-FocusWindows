@@ -5,8 +5,6 @@ import psutil
 from time import sleep
 
 
-
-
 class WindowsFocus:
 
     def __init__(self) -> None:
